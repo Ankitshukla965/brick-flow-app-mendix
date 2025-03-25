@@ -1,7 +1,7 @@
 # Docs for the Azure Web Apps Deploy action: https://github.com/Azure/webapps-deploy
 # More GitHub Actions for Azure: https://github.com/Azure/actions
 
-name: Build and deploy JAR app to Azure Web App - BrickFlow
+name: Build and deploy JAR app to Azure Web App - brickflow
 
 on:
   push:
@@ -11,7 +11,7 @@ on:
 
 jobs:
   build:
-    runs-on: ubuntu-latest
+    runs-on: windows-latest
     permissions:
       contents: read #This is required for actions/checkout
 
@@ -34,7 +34,7 @@ jobs:
           path: '${{ github.workspace }}/target/*.jar'
 
   deploy:
-    runs-on: ubuntu-latest
+    runs-on: windows-latest
     needs: build
     environment:
       name: 'Production'
@@ -42,7 +42,7 @@ jobs:
     permissions:
       id-token: write #This is required for requesting the JWT
       contents: read #This is required for actions/checkout
-  
+
     steps:
       - name: Download artifact from build job
         uses: actions/download-artifact@v4
@@ -52,15 +52,15 @@ jobs:
       - name: Login to Azure
         uses: azure/login@v2
         with:
-          client-id: ${{ secrets.AZUREAPPSERVICE_CLIENTID_945B938DEEB04281902DFEA49C43FCAA }}
-          tenant-id: ${{ secrets.AZUREAPPSERVICE_TENANTID_5E85246B833F4AF58BD91E5CD00EB326 }}
-          subscription-id: ${{ secrets.AZUREAPPSERVICE_SUBSCRIPTIONID_15B7238FCD29459C801116BFC5CD87E6 }}
+          client-id: ${{ secrets.AZUREAPPSERVICE_CLIENTID_A8B2060083AC4AB5BA48840870971E21 }}
+          tenant-id: ${{ secrets.AZUREAPPSERVICE_TENANTID_74997CDFD28C47E9932DF14F4D57FF92 }}
+          subscription-id: ${{ secrets.AZUREAPPSERVICE_SUBSCRIPTIONID_37ED6E7406B4485AB0BC2A7C803020BD }}
 
       - name: Deploy to Azure Web App
         id: deploy-to-webapp
         uses: azure/webapps-deploy@v3
         with:
-          app-name: 'BrickFlow'
+          app-name: 'brickflow'
           slot-name: 'Production'
           package: '*.jar'
           
