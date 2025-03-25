@@ -1,0 +1,37 @@
+{
+  "serializationVersion": 2,
+  "settingsParts": [
+    {
+      "suppressions": [],
+      "suppressAppStoreWarnings": false,
+      "showSuppressionInfo": true,
+      "type": "Mendix.Modeler.Suppressions.SuppressionRules, Mendix.Modeler.Core, Version=10.19.0.0, Culture=neutral, PublicKeyToken=null"
+    },
+    {
+      "suppressions": [],
+      "disabledBestPractices": [],
+      "readRecommendations": [
+        {
+          "code": "MXP006",
+          "locationObjects": [
+            {
+              "uuid": "6b702b56-7c49-4e6c-9fb5-0c5660c43b14",
+              "fullPath": "Product.DS_Apply_Filter"
+            },
+            {
+              "uuid": "45eadaa2-37dc-49f4-bbfc-3c255db39a90",
+              "fullPath": "dropDown1 (DropDown) < 245e8544-ab93-4cbd-b979-4cf5c80fc99a (LayoutGridColumn) < 9a6e5eca-b128-44cb-8df7-0f1d9ac1f88b (LayoutGridRow) < layoutGrid1 (LayoutGrid) < dataView1 (DataView) < 4ef8279a-e07f-46db-8a4f-57ce33e00020 (LayoutCallArgument) < 6c81b978-e5da-4029-a7ce-fc80b4f58dff (LayoutCall) < Product.Product_Home_Web"
+            },
+            {
+              "uuid": "ec8657f3-103e-4f4d-a68c-5a2c9426b7d5",
+              "fullPath": "rangeSlider1 (CustomWidget) < 245e8544-ab93-4cbd-b979-4cf5c80fc99a (LayoutGridColumn) < 9a6e5eca-b128-44cb-8df7-0f1d9ac1f88b (LayoutGridRow) < layoutGrid1 (LayoutGrid) < dataView1 (DataView) < 4ef8279a-e07f-46db-8a4f-57ce33e00020 (LayoutCallArgument) < 6c81b978-e5da-4029-a7ce-fc80b4f58dff (LayoutCall) < Product.Product_Home_Web"
+            }
+          ]
+        }
+      ],
+      "suppressedRecommendations": [],
+      "hasShownRecommendationsNotificationForThisApp": true,
+      "type": "Mendix.Modeler.MxAssist.PerformanceBot.Serialization.Configuration.PerformanceBotConfiguration, Mendix.Modeler.MxAssist.PerformanceBot.Serialization, Version=10.19.0.0, Culture=neutral, PublicKeyToken=null"
+    }
+  ]
+}

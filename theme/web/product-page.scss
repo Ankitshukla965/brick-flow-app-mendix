@@ -1,0 +1,46 @@
+.brick-row {
+    display: flex;
+   // grid-template-columns: 1fr 1fr 1fr;
+    gap: 50px;
+    padding: 12px;
+    background: #fff;
+    border: 0px solid #eee;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    width: 100%;
+    text-align: center;
+}
+
+
+.brick-row span {
+    white-space: nowrap; /* Prevents awkward text wrap */
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.brick-card {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px;
+    background-color: #fff;
+    border: 1px solid #eee;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    flex-wrap: wrap; /* Optional: allows small screens to break lines nicely */
+}
+
+.add-to-cart {
+    background-color: lightgoldenrodyellow;
+    border: 1px solid #c2d6ff;
+    color: #4169e1;
+    padding: 10px 16px;
+    border-radius: 8px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.add-to-cart:hover {
+    background-color: #dce8ff;
+}

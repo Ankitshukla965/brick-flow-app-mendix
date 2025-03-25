@@ -1,0 +1,36 @@
+ext {
+	mendixJavaVersion = 21
+	mendixInstallDir = "C:/Program Files/Mendix/10.19.0.57669"
+	projectName = "BrickFlowApp"
+	projectSafeName = "BrickFlowApp_main"
+	mendixProjectDir = "C:/Users/AnkitShukla/Mendix/BrickFlowApp-main"
+	deploymentDir = "C:/Users/AnkitShukla/Mendix/BrickFlowApp-main/deployment"
+	dataSnapshotFile = "C:/Users/AnkitShukla/Mendix/BrickFlowApp-main/data-snapshot.zip"
+	dataDir = "C:/Users/AnkitShukla/Mendix/BrickFlowApp-main/deployment/data"
+	extractDataSnapshot = false
+	templatesDir = "C:/Program Files/Mendix/10.19.0.57669/modeler/runtemplates"
+	runDir = "run"
+	compileTargetDir = "run/bin"
+	deploymentDirName = "deployment"
+	modelDirName = "model"
+	resourcesDirName = "resources"
+	javaSourceDirName = "javasource"
+	libDirName = "lib"
+	userlibDirName = "userlib"
+	vendorlibDirName = "vendorlib"
+	generateFullDebugInfo = false
+	excludedRunTemplatesFiles = [
+		"**/*.template",
+		"web/index-example.html"
+	]
+	publicApiJars = [
+		"runtime/bundles/com.mendix.json.jar",
+		"runtime/bundles/com.mendix.logging-api.jar",
+		"runtime/bundles/com.mendix.m2ee-api.jar",
+		"runtime/bundles/com.mendix.public-api.jar",
+		"runtime/bundles/org.eclipse.jetty.toolchain.jetty-servlet-api.jar",
+		"runtime/bundles/org.eclipse.jetty.toolchain.jetty-javax-websocket-api.jar"
+	]
+	excludedJars = []
+	protectedModules = []
+}
